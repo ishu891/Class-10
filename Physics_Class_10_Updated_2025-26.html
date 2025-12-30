@@ -1,0 +1,3216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 10 Physics CBSE 2025-26 | Complete NCERT Study Guide with Visuals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a237e;
+            --secondary: #283593;
+            --accent: #4CAF50;
+            --danger: #d32f2f;
+            --light-bg: #f8f9fa;
+            --dark-bg: #263238;
+            --text-light: #ffffff;
+            --text-dark: #2c3e50;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: var(--light-bg);
+        }
+
+        /* ===== HEADER & NAVIGATION ===== */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--text-light);
+            padding: 1.5rem 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .logo p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--dark-bg);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0.8rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            list-style: none;
+        }
+
+        .nav-controls {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        #searchInput {
+            padding: 8px 12px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+            font-size: 0.9rem;
+            width: 200px;
+            transition: width 0.3s;
+        }
+
+        #searchInput:focus {
+            width: 250px;
+            box-shadow: 0 0 5px var(--accent);
+        }
+
+        #themeToggle {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            color: var(--text-light);
+            padding: 6px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: all 0.3s;
+        }
+
+        #themeToggle:hover {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--border-radius);
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            background: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        /* ===== IMAGE STYLES ===== */
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 1rem;
+            background: #f8f9fa;
+            border-radius: var(--border-radius);
+            border-left: 4px solid var(--accent);
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            margin-bottom: 1rem;
+        }
+
+        .image-caption {
+            font-style: italic;
+            color: #666;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .diagram-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .diagram-card {
+            background: white;
+            border-radius: var(--border-radius);
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+        }
+
+        .diagram-card img {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+            margin-bottom: 1rem;
+        }
+
+        .diagram-title {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        /* ===== CHAPTER STYLES ===== */
+        .chapter {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 2px solid #eee;
+        }
+
+        .chapter:last-child {
+            border-bottom: none;
+        }
+
+        .chapter-title {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        .topic {
+            margin-bottom: 2rem;
+        }
+
+        .topic-title {
+            color: var(--secondary);
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 4px solid var(--accent);
+        }
+
+        /* Content Boxes */
+        .definition-box,
+        .formula-box,
+        .example-box,
+        .activity-box,
+        .ncert-box {
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 1.2rem 0;
+            border-left: 5px solid;
+        }
+
+        .definition-box {
+            background: #e3f2fd;
+            border-left-color: #2196f3;
+        }
+
+        .formula-box {
+            background: #f1f8e9;
+            border-left-color: #689f38;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+
+        .example-box {
+            background: #fff3e0;
+            border-left-color: #ff9800;
+        }
+
+        .activity-box {
+            background: #f3e5f5;
+            border-left-color: #9c27b0;
+        }
+
+        .ncert-box {
+            background: #e8f5e9;
+            border-left-color: #4caf50;
+        }
+
+        .box-title {
+            font-weight: 600;
+            margin-bottom: 0.8rem;
+            color: inherit;
+        }
+
+        /* ===== QUESTION BOXES ===== */
+        .question-box {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            margin: 1.2rem 0;
+            border-left: 4px solid var(--primary);
+        }
+
+        .question-number {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .question-text {
+            font-size: 1.05rem;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .answer-box {
+            background: #e8f5e9;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            margin-top: 1rem;
+            border-left: 3px solid var(--accent);
+        }
+
+        .answer-header {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Tables */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .data-table th {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .data-table td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        .data-table tr:hover {
+            background: #f0f0f0;
+        }
+
+        /* ===== PRACTICE TEST SECTION ===== */
+        .practice-test-section {
+            background: #e8f5e9;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 3rem 0;
+            border: 2px solid #4caf50;
+        }
+
+        .test-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .test-stats {
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .stat-box {
+            background: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .test-question {
+            background: white;
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: var(--border-radius);
+            border-left: 5px solid var(--primary);
+            box-shadow: var(--shadow);
+        }
+
+        .question-number {
+            color: var(--primary);
+            font-weight: 600;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .question-text {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .options-container {
+            display: grid;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .option {
+            padding: 1rem 1.5rem;
+            background: #f8f9fa;
+            border: 2px solid #dee2e6;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .option:hover {
+            background: #e9ecef;
+            border-color: var(--primary);
+        }
+
+        .option.selected {
+            background: #e3f2fd;
+            border-color: var(--primary);
+        }
+
+        .option.correct {
+            background: #d4edda;
+            border-color: #28a745;
+        }
+
+        .option.incorrect {
+            background: #f8d7da;
+            border-color: #dc3545;
+        }
+
+        .option-letter {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            font-weight: 600;
+        }
+
+        .test-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #dee2e6;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.8rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow);
+        }
+
+        .btn-success {
+            background: #28a745;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+        }
+
+        .btn-warning {
+            background: #ff9800;
+        }
+
+        .btn-warning:hover {
+            background: #e68900;
+        }
+
+        .test-result {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin-top: 2rem;
+            box-shadow: var(--shadow);
+            display: none;
+        }
+
+        .result-score {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .result-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .result-box {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+        }
+
+        /* ===== FORMULA SHEET ===== */
+        .formula-sheet {
+            background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            margin: 2rem 0;
+        }
+
+        .formula-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .formula-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: var(--dark-bg);
+            color: var(--text-light);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* ===== RESPONSIVE DESIGN ===== */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            .nav-links {
+                justify-content: center;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .main-content {
+                padding: 1.5rem;
+            }
+
+            .test-header {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .test-stats {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .diagram-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .nav-links a {
+                width: 100%;
+                text-align: center;
+            }
+
+            .chapter-title {
+                font-size: 1.5rem;
+            }
+
+            .test-controls {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        /* ===== PRINT STYLES ===== */
+        @media print {
+
+            nav,
+            footer,
+            .btn,
+            .practice-test-section {
+                display: none !important;
+            }
+
+            .main-content {
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .solution {
+                display: block !important;
+            }
+        }
+
+        /* ===== DARK MODE ===== */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+            --primary: #bbdefb;
+            /* Light Blue */
+            --secondary: #90caf9;
+            --accent: #81c784;
+            /* Light Green */
+            --dark-bg: #1e1e1e;
+            --text-light: #e0e0e0;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        }
+
+        body.dark-mode .main-content,
+        body.dark-mode .stat-box,
+        body.dark-mode .test-question,
+        body.dark-mode .formula-card,
+        body.dark-mode .chapter-title,
+        body.dark-mode .topic-title {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+            border-color: #333;
+        }
+
+        body.dark-mode .image-container {
+            background-color: #2c2c2c;
+            border-left-color: var(--accent);
+        }
+
+        body.dark-mode .option {
+            background-color: #2c2c2c;
+            border-color: #444;
+            color: #eee;
+        }
+
+        body.dark-mode .option:hover {
+            background-color: #3a3a3a;
+        }
+
+        body.dark-mode nav {
+            background-color: #000;
+        }
+
+        /* ===== CSS DIAGRAMS ===== */
+        .css-diagram {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            height: 250px;
+            margin: 0 auto;
+            background: white;
+            border: 2px solid #eee;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        /* Circuit Elements */
+        .circuit-wire {
+            position: absolute;
+            background: #333;
+        }
+
+        .battery-symbol {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .bulb-symbol {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Ray Optics */
+        .optical-axis {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: #999;
+            border-bottom: 1px dashed #999;
+        }
+
+        .optical-lens {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 2px solid #4fc3f7;
+            background: rgba(79, 195, 247, 0.1);
+        }
+
+        .ray {
+            position: absolute;
+            height: 2px;
+            background: #ff9800;
+            transform-origin: 0 50%;
+        }
+
+        .ray::after {
+            content: '>';
+            position: absolute;
+            top: -8px;
+            right: 0;
+            font-weight: bold;
+            color: #ff9800;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>📘 Class 10 Physics CBSE 2025-26</h1>
+                <p>Complete NCERT Syllabus | 300+ Practice Questions | Visual Learning | Latest Updated</p>
+            </div>
+            <div class="header-info">
+                <p>Based on Latest NCERT Textbook 2025-26</p>
+                <p>4 Chapters | All Activities | Formula Sheets | Visual Diagrams</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#electricity" class="active">⚡ Electricity</a></li>
+                <li><a href="#light">💡 Light</a></li>
+                <li><a href="#magnetism">🧲 Magnetism</a></li>
+                <li><a href="#human-eye">👁️ Human Eye</a></li>
+                <li><a href="#formulas">📝 Formulas</a></li>
+                <li><a href="#practice-test">📊 Mock Test</a></li>
+            </ul>
+            <div class="nav-controls">
+                <input type="text" id="searchInput" placeholder="Search topics/questions..." onkeyup="searchQuestions()"
+                    aria-label="Search content">
+                <button id="themeToggle" onclick="toggleTheme()" aria-label="Toggle Dark Mode">🌙 Dark Mode</button>
+                <button onclick="printPage()"
+                    style="background:rgba(255,255,255,0.2); border:1px solid rgba(255,255,255,0.4); color:white; padding:6px 12px; border-radius:20px; cursor:pointer;"
+                    aria-label="Download PDF">🖨️ PDF</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <div class="container">
+        <main class="main-content">
+            <!-- ELECTRICITY CHAPTER -->
+            <section class="chapter" id="electricity">
+                <h2 class="chapter-title">Chapter 1: Electricity (NCERT Chapter 11)</h2>
+
+                <div class="topic">
+                    <h3 class="topic-title">1.1 Electric Current and Circuit</h3>
+
+                    <div class="image-container">
+                        <!-- CSS Graph for Ohm's Law -->
+                        <div class="css-diagram"
+                            style="display:flex; justify-content:center; align-items:center; height:200px;">
+                            <div
+                                style="position:relative; width:150px; height:150px; border-left:3px solid #333; border-bottom:3px solid #333;">
+                                <div style="position:absolute; bottom:-25px; left:60px; font-weight:bold;">Current (I)
+                                </div>
+                                <div
+                                    style="position:absolute; top:60px; left:-40px; font-weight:bold; transform:rotate(-90deg);">
+                                    Voltage (V)</div>
+
+                                <!-- Linear Graph Line -->
+                                <div
+                                    style="position:absolute; bottom:0; left:0; width:200px; height:3px; background:#f44336; transform:rotate(-45deg); transform-origin:0 100%;">
+                                </div>
+                                <div style="position:absolute; top:20px; left:80px; color:#f44336; font-weight:bold;">
+                                    Slope = R (Resistance)</div>
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 1: V-I Graph (Straight Line passing through origin)</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Electric Current</div>
+                        <p>The rate of flow of electric charge through a conductor.</p>
+                        <div class="formula-box">
+                            <strong>Formula:</strong> \( I = \frac{Q}{t} \)
+                            <br><strong>Where:</strong>
+                            <br>I = Current (Ampere)
+                            <br>Q = Charge (Coulomb)
+                            <br>t = Time (second)
+                        </div>
+                        <p><strong>1 Ampere</strong> = 1 Coulomb per second = Flow of 6.25 × 10¹⁸ electrons per second.
+                        </p>
+                    </div>
+
+                    <div class="image-container">
+                        <!-- Simple Electric Circuit Visual -->
+                        <div class="css-diagram" style="position:relative; height:180px;">
+                            <!-- Wires -->
+                            <div
+                                style="position:absolute; top:40px; left:50px; width:200px; height:4px; background:#333;">
+                            </div>
+                            <div
+                                style="position:absolute; bottom:40px; left:50px; width:200px; height:4px; background:#333;">
+                            </div>
+                            <div
+                                style="position:absolute; top:40px; left:50px; width:4px; height:100px; background:#333;">
+                            </div>
+                            <div
+                                style="position:absolute; top:40px; right:150px; width:4px; height:100px; background:#333;">
+                            </div> <!-- R side logic adjusted -->
+
+                            <!-- Battery -->
+                            <div style="position:absolute; top:80px; left:30px; font-size:24px;">🔋</div>
+
+                            <!-- Bulb -->
+                            <div
+                                style="position:absolute; top:25px; right:135px; width:30px; height:30px; background:#ffeb3b; border-radius:50%; border:2px solid #555; box-shadow:0 0 15px #ffeb3b;">
+                            </div>
+
+                            <!-- Switch -->
+                            <div
+                                style="position:absolute; bottom:30px; right:130px; width:40px; height:20px; border-bottom:2px solid #333; transform:rotate(-10deg);">
+                                /</div>
+                            <div
+                                style="position:absolute; bottom:38px; right:170px; width:10px; height:4px; background:#333;">
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 2: A simple electric circuit with battery, bulb, and key</div>
+                    </div>
+
+                    <div class="ncert-box">
+                        <div class="box-title">NCERT Activity 11.1</div>
+                        <p><strong>Objective:</strong> To set up a simple electric circuit.</p>
+                        <p><strong>Materials:</strong> Cell, bulb, switch, connecting wires.</p>
+                        <p><strong>Observation:</strong> Bulb glows only when circuit is complete (switch closed).</p>
+                        <p><strong>Conclusion:</strong> Electric current flows only in a closed circuit.</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">1.2 Ohm's Law</h3>
+
+                    <div class="image-container">
+                        <!-- Resistance Analogy Visual -->
+                        <div class="css-diagram"
+                            style="display:flex; flex-direction:column; justify-content:center; align-items:center; gap:15px; height:auto; padding:20px;">
+                            <div style="display:flex; align-items:center; gap:20px;">
+                                <div
+                                    style="width:150px; height:30px; background:#b0bec5; border:1px solid #78909c; display:flex; justify-content:center; align-items:center; font-weight:bold;">
+                                    Thick Wire (Low R)</div>
+                                <span>Easier flow ➡️</span>
+                            </div>
+                            <div style="display:flex; align-items:center; gap:20px;">
+                                <div
+                                    style="width:150px; height:10px; background:#b0bec5; border:1px solid #78909c; display:flex; justify-content:center; align-items:center; font-size:10px;">
+                                    Thin Wire (High R)</div>
+                                <span>Harder flow ➡️</span>
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 3: Resistance depends on Area (A) and Length (L)</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Ohm's Law (At constant temperature)</div>
+                        <p>The potential difference across the ends of a conductor is directly proportional to the
+                            current flowing through it.</p>
+                        <div class="formula-box">
+                            \( V \propto I \) or \( V = IR \)
+                            <br><br>
+                            <strong>Where:</strong>
+                            <br>V = Potential difference (Volts)
+                            <br>I = Current (Amperes)
+                            <br>R = Resistance (Ohms)
+                        </div>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="box-title">NCERT Example 11.2</div>
+                        <p><strong>Problem:</strong> How much work is done in moving a charge of 2 C across two points
+                            having a potential difference of 12 V?</p>
+                        <button class="btn" onclick="toggleSolution('sol1')">Show Solution</button>
+                        <div class="solution" id="sol1" style="display: none;">
+                            <p><strong>Given:</strong> Q = 2 C, V = 12 V</p>
+                            <p><strong>Formula:</strong> Work done = V × Q</p>
+                            <p><strong>Calculation:</strong> W = 12 × 2 = 24 J</p>
+                            <p><strong>Answer:</strong> 24 Joules of work is done.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">1.3 Resistance and Resistivity</h3>
+
+                    <div class="formula-box">
+                        <strong>Resistance of a conductor:</strong>
+                        \[ R = \rho \frac{L}{A} \]
+                        <br>
+                        <strong>Where:</strong>
+                        <br>ρ = Resistivity (Ω·m)
+                        <br>L = Length of conductor (m)
+                        <br>A = Cross-sectional area (m²)
+                        <br><br>
+                        <strong>Dependence:</strong> R ∝ L, R ∝ 1/A, R ∝ ρ
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Material</th>
+                                <th>Resistivity (Ω·m)</th>
+                                <th>Use</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Silver</td>
+                                <td>1.60 × 10⁻⁸</td>
+                                <td>Best conductor, expensive</td>
+                            </tr>
+                            <tr>
+                                <td>Copper</td>
+                                <td>1.68 × 10⁻⁸</td>
+                                <td>Electrical wires</td>
+                            </tr>
+                            <tr>
+                                <td>Aluminium</td>
+                                <td>2.82 × 10⁻⁸</td>
+                                <td>Transmission lines</td>
+                            </tr>
+                            <tr>
+                                <td>Tungsten</td>
+                                <td>5.60 × 10⁻⁸</td>
+                                <td>Bulb filaments</td>
+                            </tr>
+                            <tr>
+                                <td>Nichrome</td>
+                                <td>100 × 10⁻⁸</td>
+                                <td>Heating elements</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">1.4 Series and Parallel Circuits</h3>
+
+                    <div class="diagram-container">
+                        <div class="diagram-card">
+                            <div class="diagram-title">Series Circuit</div>
+                            <div class="css-diagram" style="height:150px; border:none; background:transparent;">
+                                <div
+                                    style="position:relative; width:200px; height:100px; border:3px solid #333; margin:0 auto;">
+                                    <div
+                                        style="position:absolute; top:-10px; left:30px; width:50px; height:20px; background:white; border:2px solid #333; text-align:center; line-height:16px;">
+                                        R1</div>
+                                    <div
+                                        style="position:absolute; top:-10px; right:30px; width:50px; height:20px; background:white; border:2px solid #333; text-align:center; line-height:16px;">
+                                        R2</div>
+                                    <div
+                                        style="position:absolute; bottom:-15px; left:80px; width:40px; background:white; text-align:center; font-size:20px;">
+                                        🔋</div>
+                                    <div style="position:absolute; top:30px; left:100px; font-weight:bold;">→ I</div>
+                                </div>
+                            </div>
+                            <p>Current is <strong>same</strong> everywhere.</p>
+                        </div>
+                        <div class="diagram-card">
+                            <div class="diagram-title">Parallel Circuit</div>
+                            <div class="css-diagram" style="height:150px; border:none; background:transparent;">
+                                <div style="position:relative; width:200px; height:100px; margin:0 auto;">
+                                    <div
+                                        style="position:absolute; left:0; top:10px; width:200px; height:3px; background:#333;">
+                                    </div> <!-- Top wire -->
+                                    <div
+                                        style="position:absolute; left:0; bottom:10px; width:200px; height:3px; background:#333;">
+                                    </div> <!-- Bot wire -->
+                                    <div
+                                        style="position:absolute; left:0; top:10px; width:3px; height:80px; background:#333;">
+                                    </div> <!-- Left wire -->
+                                    <div
+                                        style="position:absolute; right:0; top:10px; width:3px; height:80px; background:#333;">
+                                    </div> <!-- Right wire -->
+
+                                    <div
+                                        style="position:absolute; top:25px; left:30px; width:140px; height:3px; background:#333;">
+                                    </div> <!-- R1 wire -->
+                                    <div
+                                        style="position:absolute; top:65px; left:30px; width:140px; height:3px; background:#333;">
+                                    </div> <!-- R2 wire -->
+
+                                    <div
+                                        style="position:absolute; top:15px; left:70px; width:60px; height:20px; background:white; border:2px solid #333; text-align:center; line-height:16px; z-index:2;">
+                                        R1</div>
+                                    <div
+                                        style="position:absolute; top:55px; left:70px; width:60px; height:20px; background:white; border:2px solid #333; text-align:center; line-height:16px; z-index:2;">
+                                        R2</div>
+
+                                    <div style="position:absolute; left:-15px; top:40px; font-size:20px;">🔋</div>
+                                </div>
+                            </div>
+                            <p>Voltage is <strong>same</strong> across branches.</p>
+                        </div>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Property</th>
+                                <th>Series</th>
+                                <th>Parallel</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Current (I)</td>
+                                <td>Same through all components<br>I = I₁ = I₂ = I₃</td>
+                                <td>Divides among branches<br>I = I₁ + I₂ + I₃</td>
+                            </tr>
+                            <tr>
+                                <td>Voltage (V)</td>
+                                <td>Divides across components<br>V = V₁ + V₂ + V₃</td>
+                                <td>Same across all components<br>V = V₁ = V₂ = V₃</td>
+                            </tr>
+                            <tr>
+                                <td>Resistance (R)</td>
+                                <td>R = R₁ + R₂ + R₃<br>Total resistance increases</td>
+                                <td>1/R = 1/R₁ + 1/R₂ + 1/R₃<br>Total resistance decreases</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">1.5 Heating Effect and Power</h3>
+
+                    <div class="image-container" style="background:#fff3e0; border-left-color:#ff9800;">
+                        <!-- Power Formula Visual -->
+                        <div style="text-align:center; padding:2rem;">
+                            <h2 style="font-size:3rem; color:#e65100; margin-bottom:1rem;">P = V × I</h2>
+                            <div style="display:flex; justify-content:center; gap:2rem; flex-wrap:wrap;">
+                                <div
+                                    style="background:white; padding:10px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+                                    P = I²R</div>
+                                <div
+                                    style="background:white; padding:10px; border-radius:8px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
+                                    P = V²/R</div>
+                            </div>
+                            <p style="margin-top:1rem; font-style:italic; color:#666;">"Power is the rate at which
+                                energy is consumed"</p>
+                        </div>
+                        <div class="image-caption">Figure 4: Electric Power Formulas</div>
+                    </div>
+
+                    <div class="formula-box">
+                        <strong>Joule's Law of Heating:</strong>
+                        \[ H = I^2 R t \]
+                        <br>
+                        <strong>Alternative forms:</strong>
+                        \[ H = V I t = \frac{V^2}{R} t \]
+                        <br><br>
+                        <strong>Electric Power:</strong>
+                        \[ P = V I = I^2 R = \frac{V^2}{R} \]
+                        <br>
+                        <strong>Unit:</strong> Watt (W) = Joule/second
+                        <br>
+                        <strong>Commercial unit:</strong> kilowatt-hour (kWh)
+                        <br>1 kWh = 3.6 × 10⁶ J
+                    </div>
+                </div>
+
+                <!-- ELECTRICITY COMPETENCY QUESTIONS -->
+                <div class="topic">
+                    <h3 class="topic-title">20 Competency-Based Questions - Electricity</h3>
+
+                    <div class="question-box">
+                        <div class="question-number">Q1:</div>
+                        <div class="question-text">Define electric current and state its SI unit.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Electric current is the rate of flow of electric charge through a conductor. It is
+                                defined as I = Q/t, where Q is charge in coulombs and t is time in seconds. SI unit is
+                                Ampere (A).</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q2:</div>
+                        <div class="question-text">What is the relationship between conventional current direction and
+                            electron flow direction?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Conventional current direction is opposite to electron flow direction. Current flows
+                                from positive to negative terminal while electrons move from negative to positive
+                                terminal.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q3:</div>
+                        <div class="question-text">Explain why a material offers resistance to the flow of current.
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>In a conductor, free electrons are attracted by the positively charged nucleus. As they
+                                move, they collide with atoms, losing kinetic energy. These collisions resist the flow,
+                                creating resistance.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q4:</div>
+                        <div class="question-text">State Ohm's law and define resistance.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Ohm's law: V = IR, where potential difference V is directly proportional to current I
+                                for a constant temperature. Resistance R = V/I is the property of a conductor to oppose
+                                current flow.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q5:</div>
+                        <div class="question-text">Why is the tungsten used for electric bulb filaments?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Tungsten has: (1) very high melting point (~3400°C), (2) high resistivity to produce
+                                heat, (3) emits white light at high temperature, (4) low evaporation rate.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q6:</div>
+                        <div class="question-text">A bulb is rated 100 W at 220 V. Find its resistance when operating at
+                            rated value.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Power P = V²/R or P = VI<br>100 = (220)²/R<br>R = (220)²/100 = 48400/100 = 484 Ω</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q7:</div>
+                        <div class="question-text">Three resistors of 10 Ω, 15 Ω, and 20 Ω are connected in series
+                            across a 220 V supply. Find: (a) total resistance, (b) current, (c) voltage across each
+                            resistor.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(a) R_total = 10 + 15 + 20 = 45 Ω<br>(b) I = V/R = 220/45 = 4.89 A<br>(c) V₁ = 10 ×
+                                4.89 = 48.9 V, V₂ = 15 × 4.89 = 73.35 V, V₃ = 20 × 4.89 = 97.8 V</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q8:</div>
+                        <div class="question-text">The same three resistors are connected in parallel. Find: (a) total
+                            resistance, (b) total current, (c) current through each resistor.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(a) 1/R_total = 1/10 + 1/15 + 1/20 = 13/60; R_total = 4.62 Ω<br>(b) I_total = 220/4.62
+                                = 47.6 A<br>(c) I₁ = 22 A, I₂ = 14.67 A, I₃ = 11 A</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q9:</div>
+                        <div class="question-text">A wire has length 100 cm, diameter 2 mm, and resistivity 1.7 × 10⁻⁸
+                            Ω·m. Find its resistance.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>R = ρL/A where A = π(10⁻³)² m²<br>R = (1.7 × 10⁻⁸ × 1) / (π × 10⁻⁶) = 0.0054 Ω</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q10:</div>
+                        <div class="question-text">An electric heater draws 10 A current at 220 V. Calculate the energy
+                            consumed in 2 hours.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Power P = VI = 220 × 10 = 2200 W<br>Energy = 2200 × 2 = 4.4 kWh = 15,840,000 J</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q11:</div>
+                        <div class="question-text">Why are conductors of electric heating appliances made of alloys
+                            rather than pure metals?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Alloys have: (1) higher resistivity, (2) higher melting points, (3) better mechanical
+                                strength, (4) lower oxidation rates.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q12:</div>
+                        <div class="question-text">Explain why series connection is not suitable for domestic circuits.
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(1) Circuit breaks if one appliance fails, (2) High resistance reduces current, (3)
+                                Voltage divided among appliances, (4) Different appliances need different currents.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q13:</div>
+                        <div class="question-text">What is the purpose of a fuse in an electrical circuit?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>A fuse is a safety device that melts when excess current flows due to short circuit or
+                                overload, breaking the circuit and preventing damage.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q14:</div>
+                        <div class="question-text">Why are copper and aluminum wires preferred for transmission?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(1) Low resistivity, (2) High tensile strength, (3) Corrosion resistant, (4)
+                                Cost-effective, (5) Good availability.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q15:</div>
+                        <div class="question-text">A 40 W bulb and 100 W bulb are connected in parallel to 220 V. Which
+                            consumes more energy and why?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>100 W bulb consumes more. Even though both get same voltage, the 100 W bulb has lower
+                                resistance, allowing more current flow.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q16:</div>
+                        <div class="question-text">Design a circuit to control the brightness of an electric bulb using
+                            a variable resistance.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Use rheostat (variable resistance) in series with bulb. As resistance increases,
+                                current decreases, bulb becomes dimmer. As resistance decreases, current increases, bulb
+                                becomes brighter.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q17:</div>
+                        <div class="question-text">Compare series and parallel circuits.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Current: Series (same), Parallel (different)<br>Voltage: Series (divided), Parallel
+                                (same)<br>Applications: Series (old lights), Parallel (household)</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q18:</div>
+                        <div class="question-text">An electric iron has resistance 40 Ω and is operated at 220 V for 30
+                            minutes. Calculate heat produced.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Current I = 220/40 = 5.5 A<br>Power P = I²R = 1210 W<br>Energy = 1210 × 0.5 = 605 Wh =
+                                0.605 kWh</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q19:</div>
+                        <div class="question-text">Why might high current at 220 V cause severe shock while 24 V might
+                            be safe?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Shock severity depends on current, not voltage. At 220 V, body resistance allows
+                                dangerous current flow. At 24 V, voltage may not overcome body resistance.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q20:</div>
+                        <div class="question-text">What happens when a copper wire is directly connected across 220 V
+                            without resistance?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Creates short circuit. Huge current flows, generating extreme heat, melting wire,
+                                starting fire, and risking electrocution. Fuse prevents this by melting.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- LIGHT CHAPTER -->
+            <section class="chapter" id="light">
+                <h2 class="chapter-title">Chapter 2: Light - Reflection and Refraction (NCERT Chapter 9)</h2>
+
+                <div class="topic">
+                    <h3 class="topic-title">2.1 Laws of Reflection</h3>
+
+                    <div class="image-container">
+                        <!-- Reflection Diagram -->
+                        <div class="css-diagram">
+                            <div
+                                style="position:absolute; bottom:20px; left:20px; right:20px; height:2px; background:#333; border-bottom:4px solid #eee;">
+                            </div> <!-- Mirror -->
+                            <div
+                                style="position:absolute; bottom:20px; left:50%; width:1px; height:150px; border-left:1px dashed #999;">
+                            </div> <!-- Normal -->
+                            <div
+                                style="position:absolute; bottom:20px; left:50%; width:150px; height:2px; background:blue; transform:rotate(-135deg); transform-origin:0 50%;">
+                            </div> <!-- Incident -->
+                            <div
+                                style="position:absolute; bottom:20px; left:50%; width:150px; height:2px; background:red; transform:rotate(-45deg); transform-origin:0 50%;">
+                            </div> <!-- Reflected -->
+                            <div style="position:absolute; bottom:40px; left:46%; font-size:14px; font-weight:bold;">i
+                            </div>
+                            <div style="position:absolute; bottom:40px; right:46%; font-size:14px; font-weight:bold;">r
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 5: Law of Reflection - Angle of incidence equals angle of
+                            reflection</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Law 1</div>
+                        <p>The incident ray, reflected ray, and normal at the point of incidence all lie in the same
+                            plane.</p>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Law 2</div>
+                        <p>Angle of incidence (i) = Angle of reflection (r)</p>
+                        <p>Both angles measured from the normal.</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">2.2 Spherical Mirrors</h3>
+
+                    <div class="image-container">
+                        <!-- Spherical Mirrors Diagram -->
+                        <div class="css-diagram"
+                            style="display:flex; justify-content:space-around; align-items:center;">
+                            <!-- Concave -->
+                            <div style="text-align:center;">
+                                <div
+                                    style="width:40px; height:150px; border-right:3px solid #333; border-radius:50%; margin:0 auto;">
+                                </div>
+                                <div
+                                    style="border-right:3px dashed #999; height:150px; width:0; position:absolute; margin-left:35px; margin-top:-150px;">
+                                </div>
+                                <p style="margin-top:10px;">Concave</p>
+                            </div>
+                            <!-- Convex -->
+                            <div style="text-align:center;">
+                                <div
+                                    style="width:40px; height:150px; border-left:3px solid #333; border-radius:50%; margin:0 auto;">
+                                </div>
+                                <div
+                                    style="border-left:3px dashed #999; height:150px; width:0; position:absolute; margin-left:5px; margin-top:-150px;">
+                                </div>
+                                <p style="margin-top:10px;">Convex</p>
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 6: Concave (Converging) and Convex (Diverging) Mirrors</div>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Mirror Type</th>
+                                <th>Focal Length (f)</th>
+                                <th>Image Characteristics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Concave</td>
+                                <td>Negative (-ve)</td>
+                                <td>Real or virtual, inverted or erect</td>
+                            </tr>
+                            <tr>
+                                <td>Convex</td>
+                                <td>Positive (+ve)</td>
+                                <td>Always virtual, erect, diminished</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="formula-box">
+                        <strong>Mirror Formula:</strong>
+                        \[ \frac{1}{f} = \frac{1}{u} + \frac{1}{v} \]
+                        <br>
+                        <strong>Magnification:</strong>
+                        \[ m = \frac{h'}{h} = -\frac{v}{u} \]
+                        <br><br>
+                        <strong>Sign Convention (New Cartesian):</strong>
+                        <br>• Object distance (u): Always negative
+                        <br>• Image distance (v): Negative for virtual, Positive for real
+                        <br>• Focal length (f): Negative for concave, Positive for convex
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">2.3 Refraction and Snell's Law</h3>
+
+                    <div class="image-container">
+                        <!-- Refraction Diagram -->
+                        <div class="css-diagram">
+                            <div style="position:absolute; top:100px; width:100%; height:1px; background:#999;"></div>
+                            <!-- Interface -->
+                            <div
+                                style="position:absolute; top:100px; left:50%; width:1px; height:100px; border-left:1px dashed #999; transform:translateY(-50px);">
+                            </div> <!-- Normal -->
+                            <div style="position:absolute; top:20px; left:20px; font-weight:bold;">Air (n1)</div>
+                            <div style="position:absolute; bottom:20px; left:20px; font-weight:bold;">Glass (n2)</div>
+
+                            <!-- Rays -->
+                            <div
+                                style="position:absolute; top:100px; left:50%; width:100px; height:2px; background:blue; transform:rotate(-135deg); transform-origin:0 50%;">
+                            </div>
+                            <div
+                                style="position:absolute; top:100px; left:50%; width:100px; height:2px; background:red; transform:rotate(60deg); transform-origin:0 50%;">
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 7: Refraction of Light (Bending towards normal when entering
+                            denser medium)</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Refractive Index</div>
+                        <p>Ratio of speed of light in vacuum to speed in medium.</p>
+                        <div class="formula-box">
+                            \[ n = \frac{c}{v} \]
+                            <br>
+                            c = 3 × 10⁸ m/s (speed in vacuum)
+                            <br>v = speed in medium
+                        </div>
+                    </div>
+
+                    <div class="formula-box">
+                        <strong>Snell's Law:</strong>
+                        \[ n_1 \sin i = n_2 \sin r \]
+                        <br>
+                        <strong>Where:</strong>
+                        <br>n₁, n₂ = Refractive indices of two media
+                        <br>i = Angle of incidence
+                        <br>r = Angle of refraction
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">2.4 Lenses</h3>
+
+                    <div class="image-container">
+                        <img src="https://kimi-web-img.moonshot.cn/img/cdn1.byjus.com/a0acd3cb5ddf0ccc2effa9f483d6cc6810bfb0e3.png"
+                            alt="Lens Ray Diagram">
+                        <div class="image-caption">Figure 8: Image formation by convex and concave lenses</div>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Lens Type</th>
+                                <th>Focal Length (f)</th>
+                                <th>Power (P)</th>
+                                <th>Image Characteristics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Convex (Converging)</td>
+                                <td>Positive (+ve)</td>
+                                <td>Positive (+ve)</td>
+                                <td>Real or virtual, inverted or erect</td>
+                            </tr>
+                            <tr>
+                                <td>Concave (Diverging)</td>
+                                <td>Negative (-ve)</td>
+                                <td>Negative (-ve)</td>
+                                <td>Always virtual, erect, diminished</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="formula-box">
+                        <strong>Lens Formula:</strong>
+                        \[ \frac{1}{f} = \frac{1}{v} - \frac{1}{u} \]
+                        <br>
+                        <strong>Power of Lens:</strong>
+                        \[ P = \frac{1}{f} \quad (\text{f in meters}) \]
+                        <br>Unit: Diopter (D)
+                        <br><br>
+                        <strong>Magnification:</strong>
+                        \[ m = \frac{h'}{h} = \frac{v}{u} \]
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">2.5 Dispersion of Light</h3>
+
+                    <div class="image-container">
+                        <img src="https://kimi-web-img.moonshot.cn/img/i.ytimg.com/805b5204f4adca97c67cc46386d08b451b77e0e8.jpg"
+                            alt="Prism Dispersion">
+                        <div class="image-caption">Figure 9: White light dispersion through a prism showing VIBGYOR
+                            spectrum</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Dispersion</div>
+                        <p>The splitting of white light into its constituent colors when passed through a prism. This
+                            occurs because different colors have different refractive indices and bend by different
+                            amounts.</p>
+                    </div>
+                </div>
+
+                <!-- LIGHT COMPETENCY QUESTIONS -->
+                <div class="topic">
+                    <h3 class="topic-title">20 Competency-Based Questions - Light</h3>
+
+                    <div class="question-box">
+                        <div class="question-number">Q1:</div>
+                        <div class="question-text">A ray of light hits a plane mirror at an angle of 30° with the
+                            normal. What will be the angle between the incident ray and the reflected ray?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The angle between incident and reflected rays = 180° - 2(30°) = 120°</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q2:</div>
+                        <div class="question-text">A light ray enters from air into a glass block. Why does it bend
+                            towards the normal?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Glass is a denser medium than air. The speed of light decreases in denser medium,
+                                causing the ray to bend towards the normal according to Snell's law.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q3:</div>
+                        <div class="question-text">Two parallel light rays fall on a concave mirror parallel to its
+                            principal axis. After reflection, will they remain parallel? Explain.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>No. They will converge at the principal focus (F) of the concave mirror because concave
+                                mirrors are converging mirrors.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q4:</div>
+                        <div class="question-text">A concave mirror forms a real, inverted image of an object. What can
+                            you conclude about the position of the object?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The object must be placed beyond the center of curvature (C) or between C and F. If the
+                                image size equals object size, the object is exactly at C.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q5:</div>
+                        <div class="question-text">How does the focal length of a mirror change when it is immersed in
+                            water?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The focal length remains unchanged. Focal length depends only on the radius of
+                                curvature and the mirror's shape, not on the surrounding medium.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q6:</div>
+                        <div class="question-text">A convex mirror has a radius of curvature of 40 cm. An object of
+                            height 5 cm is placed 30 cm in front of it. Find the position, nature, and size of the
+                            image.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>- Focal length f = R/2 = 20 cm<br>- Using mirror formula: 1/f = 1/v + 1/u<br>- 1/20 =
+                                1/v + 1/30<br>- v = 12 cm (virtual, behind mirror)<br>- Magnification m = -v/u =
+                                -12/(-30) = 0.4<br>- Image height = 0.4 × 5 = 2 cm (erect, diminished)</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q7:</div>
+                        <div class="question-text">A light ray traveling in air is incident on a water surface at an
+                            angle of 60° to the normal. If refractive index of water is 1.33, find the angle of
+                            refraction.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>- Using Snell's law: n₁sin(θ₁) = n₂sin(θ₂)<br>- 1 × sin(60°) = 1.33 × sin(θ₂)<br>-
+                                0.866 = 1.33 × sin(θ₂)<br>- sin(θ₂) = 0.651<br>- θ₂ ≈ 40.6°</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q8:</div>
+                        <div class="question-text">A concave mirror forms a real image which is three times the size of
+                            the object. Find the object distance.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>- Given: f = 15 cm, magnification m = -3 (real, inverted)<br>- m = -v/u = -3, so v =
+                                3u<br>- Using mirror formula: 1/15 = 1/(3u) + 1/u<br>- 1/15 = 4/(3u)<br>- u = 20 cm
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q9:</div>
+                        <div class="question-text">A glass slab of thickness 4 cm and refractive index 1.5 is placed in
+                            front of an observer. By how much is the object, placed behind the slab, shifted laterally?
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>This requires specific object distance - the lateral shift depends on angle of
+                                incidence.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q10:</div>
+                        <div class="question-text">Two lenses have focal lengths f₁ = 10 cm and f₂ = -15 cm. They are
+                            placed in contact. What is the power of the combination?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>- Power P₁ = 1/f₁ = 1/0.1 = 10 D<br>- Power P₂ = 1/f₂ = 1/(-0.15) = -6.67 D<br>- Total
+                                power = 10 - 6.67 = 3.33 D</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q11:</div>
+                        <div class="question-text">Why do stars twinkle while planets do not?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Stars are point sources of light. The twinkling is caused by atmospheric refraction
+                                which changes continuously. Planets are extended sources, so the variation averages out,
+                                preventing twinkling.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q12:</div>
+                        <div class="question-text">A concave mirror is used in a solar furnace. Why is this mirror more
+                            effective than a convex mirror for this purpose?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>A concave mirror converges light rays to a focus, concentrating all solar energy at one
+                                point. A convex mirror diverges rays, spreading the energy over a large area.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q13:</div>
+                        <div class="question-text">An object is placed in front of two different mirrors - one plane and
+                            one concave. Both form virtual, erect images. What can you conclude about the object
+                            positions?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>For plane mirror, object can be anywhere. For concave mirror, object must be between
+                                pole and focus (between P and F).</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q14:</div>
+                        <div class="question-text">Explain why a camera and human eye are analogous optical systems.
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Both have a lens system that forms a real, inverted image on a light-sensitive surface
+                                (retina in eye, film/sensor in camera). Both have apertures to control light (iris in
+                                eye, aperture in camera).</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q15:</div>
+                        <div class="question-text">A prism is used to demonstrate dispersion of white light. Why is
+                            dispersion more pronounced in a prism than in a glass slab?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>A prism has non-parallel refracting surfaces inclined to each other, causing different
+                                colors to bend at different angles and emerge separated. A glass slab has parallel
+                                surfaces, so emergent rays are parallel to incident rays.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q16:</div>
+                        <div class="question-text">Design an experiment to determine the focal length of a concave
+                            mirror using the sun's rays.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Focus sunlight on a paper screen kept at different distances until a bright spot
+                                appears. The distance where sharpest spot forms is the focal length (measures ~f = R/2).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q17:</div>
+                        <div class="question-text">Explain the phenomenon of rainbow formation using concepts of
+                            refraction and dispersion.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Water droplets act as prisms. Sunlight refracts into droplets, reflects internally, and
+                                refracts again. Different colors refract at different angles. Observer sees these at
+                                different heights - VIBGYOR pattern.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q18:</div>
+                        <div class="question-text">Why should we avoid looking directly at the sun, even during sunset?
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The sun's rays can converge on the retina (like a concave mirror focuses light) causing
+                                permanent damage to light-sensitive cells, leading to blindness.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q19:</div>
+                        <div class="question-text">How can you distinguish between a plane mirror and a very slightly
+                            curved concave mirror by looking at the image of your face?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>For concave mirror very close to face - image is magnified and erect. For plane mirror
+                                - image is same size and erect. At larger distances, plane mirror always shows
+                                unmagnified image.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q20:</div>
+                        <div class="question-text">A thick lens is dropped into water. Will the focal length change? How
+                            would the change differ from immersing a thin mirror?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Yes, focal length changes (lens-maker's formula contains relative refractive index).
+                                For mirror in water, focal length doesn't change (depends only on geometry). This is
+                                because lens's focusing depends on refraction (which changes with medium), while
+                                mirror's depends on geometry.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MAGNETISM CHAPTER -->
+            <section class="chapter" id="magnetism">
+                <h2 class="chapter-title">Chapter 3: Magnetic Effects of Electric Current (NCERT Chapter 12)</h2>
+
+                <div class="topic">
+                    <h3 class="topic-title">3.1 Magnetic Field Lines</h3>
+
+                    <div class="image-container">
+                        <!-- Bar Magnet Field -->
+                        <div class="css-diagram">
+                            <div
+                                style="position:absolute; top:100px; left:50%; transform:translateX(-50%); width:160px; height:50px; display:flex; border:2px solid #333;">
+                                <div
+                                    style="flex:1; background:#e57373; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold;">
+                                    N</div>
+                                <div
+                                    style="flex:1; background:#64b5f6; display:flex; align-items:center; justify-content:center; color:white; font-weight:bold;">
+                                    S</div>
+                            </div>
+                            <!-- Field Loops -->
+                            <div
+                                style="position:absolute; top:75px; left:50%; transform:translateX(-50%); width:200px; height:100px; border:2px dashed #999; border-radius:50%; z-index:-1;">
+                            </div>
+                            <div
+                                style="position:absolute; top:50px; left:50%; transform:translateX(-50%); width:250px; height:150px; border:2px dashed #ccc; border-radius:40%; z-index:-2;">
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 10: Magnetic Field Lines around Bar Magnet</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Properties of Magnetic Field Lines</div>
+                        <ol>
+                            <li>Always form closed loops</li>
+                            <li>Never intersect each other</li>
+                            <li>Direction: Outside magnet (N→S), Inside magnet (S→N)</li>
+                            <li>Closer lines indicate stronger field</li>
+                            <li>Tangent at any point gives direction of field</li>
+                        </ol>
+                    </div>
+
+                    <div class="activity-box">
+                        <div class="box-title">NCERT Activity 12.2</div>
+                        <p><strong>Objective:</strong> To study magnetic field pattern using iron filings.</p>
+                        <p><strong>Observation:</strong> Iron filings arrange in curved lines from N to S pole.</p>
+                        <p><strong>Conclusion:</strong> Magnetic field exists around magnet, strongest near poles.</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">3.2 Magnetic Field due to Current</h3>
+
+                    <div class="image-container">
+                        <!-- Current Wire Field -->
+                        <div class="css-diagram">
+                            <div
+                                style="position:absolute; left:50%; top:20px; bottom:20px; width:4px; background:#333;">
+                            </div> <!-- Wire -->
+                            <div
+                                style="position:absolute; top:100px; left:50%; transform:translateX(-50%) scaleY(0.4); width:100px; height:100px; border:2px solid #ff9800; border-radius:50%;">
+                            </div>
+                            <div
+                                style="position:absolute; top:100px; left:50%; transform:translateX(-50%) scaleY(0.4); width:160px; height:160px; border:2px solid #ff9800; border-radius:50%;">
+                            </div>
+                            <div style="position:absolute; left:55%; top:60px; font-weight:bold;">Current (I) ↑</div>
+                        </div>
+                        <div class="image-caption">Figure 11: Concentric magnetic field lines around a straight
+                            conductor</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Right-Hand Thumb Rule</div>
+                        <p>Hold conductor in right hand with thumb pointing in direction of current. Curled fingers show
+                            direction of magnetic field.</p>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Conductor Shape</th>
+                                <th>Magnetic Field Pattern</th>
+                                <th>Field at Center</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Straight wire</td>
+                                <td>Concentric circles</td>
+                                <td>Zero (at wire itself)</td>
+                            </tr>
+                            <tr>
+                                <td>Circular loop</td>
+                                <td>Concentric circles, straight at center</td>
+                                <td>B = μ₀I/2R</td>
+                            </tr>
+                            <tr>
+                                <td>Solenoid</td>
+                                <td>Parallel straight lines inside</td>
+                                <td>B = μ₀nI</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">3.3 Force on Current-Carrying Conductor</h3>
+
+                    <div class="image-container">
+                        <img src="https://kimi-web-img.moonshot.cn/img/static.insightsonindia.in/5480bb3c8244a7f8d3b33684f81f8102662912fd"
+                            alt="Fleming Left Hand Rule">
+                        <div class="image-caption">Figure 12: Fleming's Left-Hand Rule for force on current-carrying
+                            conductor</div>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Fleming's Left-Hand Rule (Motor Rule)</div>
+                        <p>For current-carrying conductor in magnetic field:</p>
+                        <ul>
+                            <li><strong>Thumb:</strong> Direction of Force (Motion)</li>
+                            <li><strong>Forefinger:</strong> Direction of Magnetic Field (N→S)</li>
+                            <li><strong>Middle finger:</strong> Direction of Current</li>
+                        </ul>
+                        <p><em>Memory tip: "Left hand = MOTOR"</em></p>
+                    </div>
+
+                    <div class="formula-box">
+                        <strong>Force on conductor:</strong>
+                        \[ F = B I L \sin\theta \]
+                        <br>
+                        <strong>Maximum force when θ = 90°:</strong>
+                        \[ F_{\text{max}} = B I L \]
+                        <br><br>
+                        <strong>Where:</strong>
+                        <br>B = Magnetic field strength (Tesla)
+                        <br>I = Current (Ampere)
+                        <br>L = Length in field (meter)
+                        <br>θ = Angle between conductor and field
+                    </div>
+                </div>
+
+                <!-- MAGNETISM COMPETENCY QUESTIONS -->
+                <div class="topic">
+                    <h3 class="topic-title">15 Competency-Based Questions - Magnetic Effects</h3>
+
+                    <div class="question-box">
+                        <div class="question-number">Q1:</div>
+                        <div class="question-text">What is a magnetic field and how do we represent it?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>A magnetic field is the region around a magnet where magnetic force can be detected. We
+                                represent it using magnetic field lines - imaginary curves along which a north pole
+                                would move.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q2:</div>
+                        <div class="question-text">State the right-hand thumb rule for finding magnetic field direction
+                            around a current-carrying conductor.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>If the right hand thumb points in the direction of current, the fingers curl around the
+                                conductor in the direction of magnetic field lines.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q3:</div>
+                        <div class="question-text">How does the magnetic field around a solenoid differ from that around
+                            a bar magnet?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>A solenoid produces a field similar to a bar magnet: uniform field inside with parallel
+                                lines, field emerges from one end and enters the other.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q4:</div>
+                        <div class="question-text">What is an electromagnet and how is it different from a permanent
+                            magnet?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>An electromagnet is a coil wound around soft iron that becomes magnetic when current
+                                flows. A permanent magnet retains magnetism. Electromagnet's strength depends on
+                                current.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q5:</div>
+                        <div class="question-text">Define Fleming's left-hand rule and its application.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Stretch thumb, forefinger, and middle finger of left hand mutually perpendicular. First
+                                finger = magnetic field, middle finger = current, thumb = force/motion direction.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q6:</div>
+                        <div class="question-text">A straight conductor carries 5 A current. At 10 cm perpendicular
+                            distance, what is the magnetic field direction if current flows east to west?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Using right-hand rule: At 10 cm below wire, field points north; at 10 cm above wire,
+                                field points south.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q7:</div>
+                        <div class="question-text">A solenoid has 500 turns, 25 cm long, carrying 2 A. What is the
+                            magnetic field inside?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>B = μ₀nI where n = 500/0.25 = 2000 turns/m; B = 4π × 10⁻⁷ × 2000 × 2 ≈ 5.03 × 10⁻³ T
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q8:</div>
+                        <div class="question-text">A current-carrying wire of length 50 cm carrying 3 A is perpendicular
+                            to a magnetic field of 0.8 T. Calculate force.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>F = BIL sin(90°) = 0.8 × 3 × 0.5 × 1 = 1.2 N</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q9:</div>
+                        <div class="question-text">An electron beam moving east is deflected south by a magnetic field.
+                            Determine the field direction.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Field direction = downward (into the page)</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q10:</div>
+                        <div class="question-text">A horizontal power line carries 100 A current from north to south.
+                            What is the magnetic field direction 20 cm below?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Using right-hand rule: magnetic field direction = east</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q11:</div>
+                        <div class="question-text">Explain how an electric bell works using magnetic principles.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Current in solenoid creates magnetic field, attracting soft iron armature. Armature
+                                moves, striking bell and breaking circuit. Current stops, spring pulls armature back,
+                                remakes contact. Cycle repeats rapidly.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q12:</div>
+                        <div class="question-text">Why use soft iron core in electromagnets instead of steel?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Soft iron loses magnetism quickly when current stops. Steel retains magnetism.
+                                Electromagnet needs to switch on/off easily.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q13:</div>
+                        <div class="question-text">How is a moving coil galvanometer converted to ammeter or voltmeter?
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Ammeter: connect low resistance (shunt) in parallel. Voltmeter: connect high resistance
+                                (multiplier) in series.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q14:</div>
+                        <div class="question-text">Why is the magnetic field inside a long solenoid approximately
+                            uniform?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Each circular turn produces concentric circles that become parallel lines at center.
+                                Combined effect of all turns produces uniform straight parallel field inside.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q15:</div>
+                        <div class="question-text">An electron moving horizontally right enters upward magnetic field.
+                            Describe its path.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The electron follows a circular path due to perpendicular force from magnetic field.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- HUMAN EYE CHAPTER -->
+            <section class="chapter" id="human-eye">
+                <h2 class="chapter-title">Chapter 4: Human Eye and Colourful World (NCERT Chapter 10)</h2>
+
+                <div class="topic">
+                    <h3 class="topic-title">4.1 Structure of Human Eye</h3>
+
+                    <div class="image-container">
+                        <!-- Human Eye Anatomy -->
+                        <div class="css-diagram" style="background:#fff;">
+                            <div
+                                style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); width:180px; height:180px; border:3px solid #333; border-radius:50%;">
+                            </div>
+                            <!-- Lens -->
+                            <div
+                                style="position:absolute; top:50%; left:40px; transform:translateY(-50%); width:15px; height:60px; background:#b3e5fc; border-radius:50%;">
+                            </div>
+                            <!-- Retina -->
+                            <div
+                                style="position:absolute; top:50%; right:35px; transform:translateY(-50%); color:#e91e63; font-weight:bold; font-size:12px;">
+                                Retina</div>
+                        </div>
+                        <div class="image-caption">Figure 13: Simplified Human Eye Structure</div>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Part</th>
+                                <th>Function</th>
+                                <th>Important Fact</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Cornea</td>
+                                <td>Initial refraction of light</td>
+                                <td>Does 2/3 of total refraction</td>
+                            </tr>
+                            <tr>
+                                <td>Iris</td>
+                                <td>Controls amount of light entering</td>
+                                <td>Colored part, adjusts pupil size</td>
+                            </tr>
+                            <tr>
+                                <td>Lens</td>
+                                <td>Fine focusing (accommodation)</td>
+                                <td>Changes shape for near/far vision</td>
+                            </tr>
+                            <tr>
+                                <td>Retina</td>
+                                <td>Contains light-sensitive cells</td>
+                                <td>Rods (dim light) and Cones (color)</td>
+                            </tr>
+                            <tr>
+                                <td>Ciliary muscles</td>
+                                <td>Change curvature of lens</td>
+                                <td>Enable accommodation</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="definition-box">
+                        <div class="box-title">Accommodation</div>
+                        <p>Ability of eye lens to change its focal length to focus objects at different distances.</p>
+                        <p><strong>Near point:</strong> 25 cm (minimum distance for clear vision)</p>
+                        <p><strong>Far point:</strong> Infinity (for normal eye)</p>
+                        <p><strong>Range of vision:</strong> 25 cm to infinity</p>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">4.2 Defects of Vision and Correction</h3>
+
+                    <div class="image-container">
+                        <!-- Vision Defects -->
+                        <div class="css-diagram"
+                            style="display:flex; justify-content:space-around; align-items:center;">
+                            <div style="text-align:center;">
+                                <div
+                                    style="width:100px; height:100px; border:2px solid #333; border-radius:50%; position:relative; margin:0 auto;">
+                                    <div
+                                        style="position:absolute; top:50%; left:80px; width:4px; height:4px; background:red; border-radius:50%;">
+                                    </div> <!-- Image before retina -->
+                                </div>
+                                <p>Myopia<br>(Image Front)</p>
+                            </div>
+                            <div style="text-align:center;">
+                                <div
+                                    style="width:100px; height:100px; border:2px solid #333; border-radius:50%; position:relative; margin:0 auto;">
+                                    <div
+                                        style="position:absolute; top:50%; right:-10px; width:4px; height:4px; background:red; border-radius:50%;">
+                                    </div> <!-- Image behind retina -->
+                                </div>
+                                <p>Hypermetropia<br>(Image Behind)</p>
+                            </div>
+                        </div>
+                        <div class="image-caption">Figure 14: Vision Defects (Myopia vs Hypermetropia)</div>
+                    </div>
+
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Defect</th>
+                                <th>Problem</th>
+                                <th>Cause</th>
+                                <th>Correction</th>
+                                <th>Lens Formula</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Myopia (Nearsightedness)</td>
+                                <td>Can't see distant objects clearly</td>
+                                <td>Eyeball too long or lens too curved</td>
+                                <td>Concave (diverging) lens</td>
+                                <td>P = -1/f (in meters)</td>
+                            </tr>
+                            <tr>
+                                <td>Hypermetropia (Farsightedness)</td>
+                                <td>Can't see near objects clearly</td>
+                                <td>Eyeball too short or lens weak</td>
+                                <td>Convex (converging) lens</td>
+                                <td>P = +1/f (in meters)</td>
+                            </tr>
+                            <tr>
+                                <td>Presbyopia</td>
+                                <td>Age-related loss of accommodation</td>
+                                <td>Lens loses elasticity, ciliary muscles weak</td>
+                                <td>Bifocal lenses</td>
+                                <td>Different powers for near/far</td>
+                            </tr>
+                            <tr>
+                                <td>Astigmatism</td>
+                                <td>Blurred vision due to irregular cornea</td>
+                                <td>Cornea not spherical</td>
+                                <td>Cylindrical lenses</td>
+                                <td>Specific axis correction</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="example-box">
+                        <div class="box-title">NCERT Example: Myopia Correction</div>
+                        <p><strong>Problem:</strong> A person with myopic eye can't see objects beyond 1.2 m distinctly.
+                            What power lens should be used?</p>
+                        <button class="btn" onclick="toggleSolution('sol2')">Show Solution</button>
+                        <div class="solution" id="sol2" style="display: none;">
+                            <p><strong>Given:</strong> Far point = 1.2 m</p>
+                            <p><strong>For myopia:</strong> Concave lens needed</p>
+                            <p><strong>Focal length:</strong> f = -Far point = -1.2 m</p>
+                            <p><strong>Power:</strong> P = 1/f = 1/(-1.2) = -0.833 D</p>
+                            <p><strong>Answer:</strong> Concave lens of power -0.833 Diopter</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="topic">
+                    <h3 class="topic-title">4.3 Atmospheric Phenomena</h3>
+
+                    <div class="definition-box">
+                        <div class="box-title">Twinkling of Stars</div>
+                        <p>Due to atmospheric refraction. Starlight bends continuously through layers of different
+                            densities, causing apparent position to fluctuate.</p>
+                        <p><strong>Why planets don't twinkle:</strong> They are closer, appear as extended sources (not
+                            point sources).</p>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Advance Sunrise & Delayed Sunset</div>
+                        <p>Sun visible 2 minutes before actual sunrise and 2 minutes after sunset due to atmospheric
+                            refraction.</p>
+                    </div>
+
+                    <div class="definition-box">
+                        <div class="box-title">Scattering of Light</div>
+                        <ul>
+                            <li><strong>Blue sky:</strong> Rayleigh scattering (blue light scattered more)</li>
+                            <li><strong>Red sunrise/sunset:</strong> Light travels longer path, blue scattered away</li>
+                            <li><strong>Danger signals red:</strong> Red scatters least, visible from far</li>
+                            <li><strong>White clouds:</strong> Large water droplets scatter all colors</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- HUMAN EYE COMPETENCY QUESTIONS -->
+                <div class="topic">
+                    <h3 class="topic-title">20 Competency-Based Questions - Human Eye</h3>
+
+                    <div class="question-box">
+                        <div class="question-number">Q1:</div>
+                        <div class="question-text">What is the purpose of the iris in the human eye?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The iris is a muscular diaphragm that controls the size of the pupil, regulating the
+                                amount of light entering the eye. It contracts in bright light and dilates in dim light.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q2:</div>
+                        <div class="question-text">Explain the term "power of accommodation" of the eye.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>It is the ability of the eye lens to adjust its focal length by changing its curvature,
+                                allowing us to focus on objects at different distances from near point (25 cm) to far
+                                point (infinity).</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q3:</div>
+                        <div class="question-text">What is the near point and far point of a normal human eye?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Near point: 25 cm (minimum distance at which objects can be seen distinctly without
+                                strain). Far point: infinity (farthest distance at which eye can see objects clearly).
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q4:</div>
+                        <div class="question-text">A myopic person can see nearby objects clearly but distant objects
+                            appear blurred. Explain the defect.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>In myopia, the eyeball is elongated or the cornea is too curved, causing light rays
+                                from distant objects to focus in front of the retina instead of on it.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q5:</div>
+                        <div class="question-text">How does a convex lens correct hypermetropia?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>A convex lens converges light rays, providing additional focusing power. This brings
+                                the image of nearby objects forward onto the retina, allowing near vision to be
+                                corrected.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q6:</div>
+                        <div class="question-text">A myopic person's far point is 100 cm. What should be the power of
+                            the corrective lens?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>- For correction, the lens must form an image at 100 cm for an object at infinity<br>-
+                                Using lens formula: 1/f = 1/v + 1/u<br>- 1/f = 1/(-100) + 1/∞ = -1/100<br>- f = -100 cm
+                                = -1 m<br>- Power P = 1/f = -1 D</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q7:</div>
+                        <div class="question-text">A hypermetropic eye has a near point of 50 cm. Find the power of the
+                            lens needed to restore it to 25 cm.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The lens must form an image at 25 cm when object is at 50 cm. For hypermetropia,
+                                typically correction gives power ≈ +2 D (convex lens).</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q8:</div>
+                        <div class="question-text">The power of the lens used by a person is -0.5 D. By how much is
+                            their far point closer than normal?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>- Power P = -0.5 D, so f = 1/(-0.5) = -2 m = -200 cm<br>- For myopia, far point = |f| =
+                                200 cm = 2 m</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q9:</div>
+                        <div class="question-text">A person suffers from myopia and hypermetropia both (presbyopia). If
+                            their powers are -2 D and +1.5 D, what is the bifocal lens power?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Bifocal lenses consist of two distinct parts:
+                                <br>1. <strong>Upper Part (Distant Vision):</strong> Concave lens (-2.0 D).
+                                <br>2. <strong>Lower Part (Near Vision):</strong> Convex lens (+1.5 D).
+                                <br>The powers are not added; distinct zones are used for different viewing distances.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q10:</div>
+                        <div class="question-text">Calculate the focal length of a lens whose power is +2.5 D.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>- Power P = 1/f<br>- 2.5 = 1/f<br>- f = 1/2.5 = 0.4 m = 40 cm (converging/convex lens)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q11:</div>
+                        <div class="question-text">Why are blue eyes more sensitive to bright light than brown eyes?
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Brown eyes have more melanin which absorbs light, providing natural UV protection. Blue
+                                eyes have less melanin, allowing more light to reach the retina, making them more
+                                sensitive.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q12:</div>
+                        <div class="question-text">Explain why the sky appears blue during the day.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Blue light has shorter wavelengths and is scattered more by atmospheric particles than
+                                other colors (Rayleigh scattering). This scattered blue light reaches our eyes from all
+                                directions.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q13:</div>
+                        <div class="question-text">Why does the sun appear red during sunrise and sunset?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>During sunrise/sunset, sunlight travels through a longer path in the atmosphere. Blue
+                                light is scattered away, leaving red and orange light to reach the observer.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q14:</div>
+                        <div class="question-text">How does the structure of the retina enable color vision?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The retina contains two types of cells - cones (for color vision, need bright light)
+                                and rods (for black and white vision, work in dim light). Cones contain pigments
+                                sensitive to red, green, and blue light.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q15:</div>
+                        <div class="question-text">A child has difficulty reading the blackboard from the back of the
+                            class. What defect might they have and how should it be corrected?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>The child likely has myopia (nearsightedness). Distant objects appear blurred.
+                                Correction: Use concave lens of appropriate power to diverge light and bring image onto
+                                retina.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q16:</div>
+                        <div class="question-text">Compare the image formation in the human eye with a camera. What are
+                            the similarities and differences?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Similarities: Both have lens, aperture (iris/aperture), light-sensitive surface
+                                (retina/film). Differences: Eye lens changes shape (accommodation), camera uses
+                                different lenses; eye image inverted on retina but brain processes correctly; camera
+                                records image.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q17:</div>
+                        <div class="question-text">Explain why it's risky to stare at an eclipse, even with protective
+                            goggles, if not done carefully.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>During eclipse, the iris doesn't fully contract due to darkness, but intense focused
+                                solar radiation can still reach the retina, causing permanent damage to photoreceptors.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q18:</div>
+                        <div class="question-text">Describe the path of light through the human eye and explain the role
+                            of each optical component.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Light enters through cornea (main refraction ~75%), passes through aqueous humor, iris
+                                controls aperture (pupil), light refracted by eye lens (fine focus/accommodation),
+                                passes through vitreous humor, forms real, inverted image on retina, retina sends signal
+                                via optic nerve to brain.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q19:</div>
+                        <div class="question-text">How would a person's vision change if their lens became completely
+                            opaque (cataract)?</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Vision would become progressively blurred and eventually lost because light cannot pass
+                                through the lens to reach the retina. This requires cataract surgery to remove and
+                                replace the lens.</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q20:</div>
+                        <div class="question-text">Design a test to determine if a person has color blindness.</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>Use Ishihara color blindness test plates - images with different colored dots forming
+                                numbers/patterns visible to normal vision but not to colorblind individuals. This tests
+                                specifically for red-green color blindness.</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- FORMULA SHEET -->
+            <section class="formula-sheet" id="formulas">
+                <h2 class="chapter-title">📝 Complete Physics Formula Sheet</h2>
+
+                <div class="formula-grid">
+                    <div class="formula-card">
+                        <h4>⚡ Electricity</h4>
+                        <p>I = Q/t</p>
+                        <p>V = IR</p>
+                        <p>R = ρL/A</p>
+                        <p>P = VI = I²R = V²/R</p>
+                        <p>H = I²Rt</p>
+                        <p>Series: R = R₁ + R₂ + ...</p>
+                        <p>Parallel: 1/R = 1/R₁ + 1/R₂ + ...</p>
+                    </div>
+
+                    <div class="formula-card">
+                        <h4>💡 Light - Reflection</h4>
+                        <p>1/f = 1/u + 1/v</p>
+                        <p>m = h'/h = -v/u</p>
+                        <p>R = 2f</p>
+                        <p>f = R/2</p>
+                    </div>
+
+                    <div class="formula-card">
+                        <h4>🔍 Light - Refraction</h4>
+                        <p>n = c/v</p>
+                        <p>n₁ sin i = n₂ sin r</p>
+                        <p>1/f = 1/v - 1/u (lens)</p>
+                        <p>P = 1/f (in meters)</p>
+                        <p>m = v/u (lens)</p>
+                    </div>
+
+                    <div class="formula-card">
+                        <h4>🧲 Magnetism</h4>
+                        <p>F = BIL sin θ</p>
+                        <p>B (solenoid) = μ₀nI</p>
+                        <p>Right-hand thumb rule</p>
+                        <p>Fleming's left-hand rule</p>
+                    </div>
+
+                    <div class="formula-card">
+                        <h4>👁️ Human Eye</h4>
+                        <p>Myopia: P = -1/f</p>
+                        <p>Hypermetropia: P = +1/f</p>
+                        <p>Near point = 25 cm</p>
+                        <p>Far point = ∞ (normal)</p>
+                    </div>
+
+                    <div class="formula-card">
+                        <h4>📊 Units & Constants</h4>
+                        <p>1 A = 1 C/s</p>
+                        <p>1 V = 1 J/C</p>
+                        <p>1 Ω = 1 V/A</p>
+                        <p>1 W = 1 J/s</p>
+                        <p>1 kWh = 3.6×10⁶ J</p>
+                        <p>c = 3×10⁸ m/s</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- COMPREHENSIVE QUESTION BANK -->
+            <section class="chapter" id="comprehensive-questions">
+                <h2 class="chapter-title">📚 Comprehensive Question Bank - 80 Additional Questions</h2>
+                <p style="margin-bottom: 2rem; color: #666;">Mix of All Chapters with Various Question Types</p>
+
+                <!-- SECTION A: MCQs -->
+                <div class="topic">
+                    <h3 class="topic-title">SECTION A: Multiple Choice Questions (30 questions)</h3>
+
+                    <div class="question-box">
+                        <div class="question-number">Q1:</div>
+                        <div class="question-text">A mirror produces virtual, erect, reduced image. The mirror is: (a)
+                            Concave (b) Convex (c) Plane (d) Cylindrical</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Convex</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q2:</div>
+                        <div class="question-text">Relationship between focal length (f) and radius of curvature (R) for
+                            spherical mirror: (a) f = 2R (b) f = R/2 (c) f = R (d) f = 4R</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) f = R/2</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q3:</div>
+                        <div class="question-text">Light ray incident at 45° to normal on plane mirror. Angle between
+                            incident and reflected rays: (a) 45° (b) 90° (c) 135° (d) 180°</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) 90°</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q4:</div>
+                        <div class="question-text">Power of lens with focal length 20 cm: (a) 5 D (b) -5 D (c) 0.2 D (d)
+                            20 D</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(a) 5 D</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q5:</div>
+                        <div class="question-text">Light traveling from rarer to denser medium bends: (a) Away from
+                            normal (b) Towards normal (c) Parallel (d) Does not bend</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Towards normal</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q6:</div>
+                        <div class="question-text">Critical angle for total internal reflection depends on: (a) Angle of
+                            incidence (b) Refractive index (c) Color of light (d) Wavelength</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Refractive index</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q7:</div>
+                        <div class="question-text">Concave lens always produces: (a) Real, erect (b) Virtual, erect (c)
+                            Real, inverted (d) Virtual, inverted</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Virtual, erect</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q8:</div>
+                        <div class="question-text">Convex mirror image is always: (a) Real, enlarged (b) Virtual,
+                            enlarged (c) Virtual, diminished (d) Real, diminished</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(c) Virtual, diminished</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q9:</div>
+                        <div class="question-text">Dispersion of white light occurs because: (a) Same wavelength (b)
+                            Different refractive indices (c) Straight line (d) Different reflection</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Different refractive indices</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q10:</div>
+                        <div class="question-text">Myopia is corrected by: (a) Convex lens (b) Concave lens (c)
+                            Cylindrical lens (d) No lens</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Concave lens</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q11:</div>
+                        <div class="question-text">Far point of normal eye: (a) 25 cm (b) 1 m (c) Infinity (d) 2 m</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(c) Infinity</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q12:</div>
+                        <div class="question-text">Blue color of sky due to: (a) Reflection (b) Refraction (c)
+                            Scattering (d) Dispersion</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(c) Scattering</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q13:</div>
+                        <div class="question-text">Unit of electric power: (a) Joule (b) Watt (c) Volt (d) Ampere</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Watt</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q14:</div>
+                        <div class="question-text">Device to measure current: (a) Voltmeter (b) Ammeter (c) Galvanometer
+                            (d) Ohmmeter</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Ammeter</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q15:</div>
+                        <div class="question-text">Resistance depends on: (a) Material only (b) Length only (c) Area
+                            only (d) All of these</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(d) All of these</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q16:</div>
+                        <div class="question-text">Commercial unit of energy: (a) Joule (b) kWh (c) Watt (d) Calorie
+                        </div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) kWh</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q17:</div>
+                        <div class="question-text">Best conductor of electricity: (a) Copper (b) Silver (c) Aluminium
+                            (d) Iron</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Silver</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q18:</div>
+                        <div class="question-text">Fuse wire has: (a) High melting point (b) Low melting point (c) High
+                            resistance (d) Both (b) and (c)</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(d) Both (b) and (c)</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q19:</div>
+                        <div class="question-text">Direction of magnetic field lines: (a) S to N (b) N to S (c) Either
+                            way (d) No direction</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) N to S</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q20:</div>
+                        <div class="question-text">Earth's magnetic field resembles: (a) Straight magnet (b) Bar magnet
+                            (c) Horseshoe magnet (d) Electromagnet</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Bar magnet</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q21:</div>
+                        <div class="question-text">Force on conductor in magnetic field is maximum when angle is: (a) 0°
+                            (b) 30° (c) 45° (d) 90°</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(d) 90°</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q22:</div>
+                        <div class="question-text">Electromagnetic induction discovered by: (a) Oersted (b) Faraday (c)
+                            Ampere (d) Ohm</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Faraday</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q23:</div>
+                        <div class="question-text">Lenz's law is consequence of: (a) Conservation of energy (b)
+                            Conservation of charge (c) Conservation of mass (d) Conservation of momentum</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(a) Conservation of energy</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q24:</div>
+                        <div class="question-text">Electric motor converts: (a) Electrical to mechanical (b) Mechanical
+                            to electrical (c) Heat to electrical (d) Light to electrical</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(a) Electrical to mechanical</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q25:</div>
+                        <div class="question-text">Generator converts: (a) Electrical to mechanical (b) Mechanical to
+                            electrical (c) Heat to electrical (d) Light to electrical</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Mechanical to electrical</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q26:</div>
+                        <div class="question-text">Retina contains: (a) Rods only (b) Cones only (c) Both rods and cones
+                            (d) Neither</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(c) Both rods and cones</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q27:</div>
+                        <div class="question-text">Color vision due to: (a) Rods (b) Cones (c) Iris (d) Cornea</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Cones</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q28:</div>
+                        <div class="question-text">Twinkling of stars due to: (a) Reflection (b) Refraction (c)
+                            Atmospheric refraction (d) Scattering</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(c) Atmospheric refraction</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q29:</div>
+                        <div class="question-text">Red color used in danger signals because: (a) Scattered most (b)
+                            Scattered least (c) Brightest color (d) Traditional</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(b) Scattered least</div>
+                        </div>
+                    </div>
+
+                    <div class="question-box">
+                        <div class="question-number">Q30:</div>
+                        <div class="question-text">Ohm's law valid when: (a) Temperature constant (b) Temperature
+                            changes (c) Any temperature (d) High temperature only</div>
+                        <div class="answer-box">
+                            <div class="answer-header">Answer:</div>
+                            <div>(a) Temperature constant</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRACTICE TEST SECTION -->
+            <section class="practice-test-section" id="practice-test">
+                <h2 class="chapter-title">📊 Interactive Practice Test</h2>
+
+                <div class="test-header">
+                    <div>
+                        <h3>Class 10 Physics - Mock Test</h3>
+                        <p>Based on CBSE 2025-26 Pattern</p>
+                    </div>
+                    <div class="test-stats">
+                        <div class="stat-box">Questions: <strong>10</strong></div>
+                        <div class="stat-box">Time: <strong>15 min</strong></div>
+                        <div class="stat-box">Marks: <strong>20</strong></div>
+                    </div>
+                </div>
+
+                <div id="test-container">
+                    <!-- Test questions will be loaded here -->
+                </div>
+
+                <div class="test-controls">
+                    <button class="btn btn-warning" onclick="resetTest()">Reset Test</button>
+                    <button class="btn btn-success" onclick="showResults()">Show Results</button>
+                </div>
+
+                <div class="test-result" id="test-result">
+                    <h3>Test Results</h3>
+                    <div class="result-score" id="score-display">Score: 0/20</div>
+                    <div class="result-details" id="result-details">
+                        <!-- Results will be displayed here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Class 10 Physics Study Guide | Based on NCERT CBSE Syllabus 2025-26</p>
+        <p>Enhanced with Visual Diagrams and Interactive Learning | Best of Luck for Your Exams!</p>
+    </footer>
+
+    <script>
+        // Test functionality
+        const testQuestions = [
+            {
+                question: "What is the SI unit of electric current?",
+                options: ["Volt", "Ampere", "Ohm", "Watt"],
+                correct: 1,
+                marks: 1
+            },
+            {
+                question: "Which law states that V = IR?",
+                options: ["Faraday's Law", "Ohm's Law", "Lenz's Law", "Newton's Law"],
+                correct: 1,
+                marks: 1
+            },
+            {
+                question: "The angle of incidence is equal to the angle of reflection. This is known as:",
+                options: ["Law of Refraction", "Law of Reflection", "Snell's Law", "Law of Dispersion"],
+                correct: 1,
+                marks: 1
+            },
+            {
+                question: "Which mirror always produces a virtual, erect, and diminished image?",
+                options: ["Concave", "Convex", "Plane", "Cylindrical"],
+                correct: 1,
+                marks: 2
+            },
+            {
+                question: "The power of a lens is measured in:",
+                options: ["Watts", "Joules", "Diopters", "Volts"],
+                correct: 2,
+                marks: 1
+            },
+            {
+                question: "Myopia is corrected using:",
+                options: ["Convex lens", "Concave lens", "Cylindrical lens", "No lens"],
+                correct: 1,
+                marks: 2
+            },
+            {
+                question: "Fleming's left-hand rule is used to find:",
+                options: ["Direction of current", "Direction of magnetic field", "Direction of force", "Direction of motion"],
+                correct: 2,
+                marks: 2
+            },
+            {
+                question: "The commercial unit of electrical energy is:",
+                options: ["Joule", "Watt", "kWh", "Volt"],
+                correct: 2,
+                marks: 1
+            },
+            {
+                question: "Electromagnetic induction was discovered by:",
+                options: ["Oersted", "Faraday", "Ampere", "Ohm"],
+                correct: 1,
+                marks: 1
+            },
+            {
+                question: "The sky appears blue due to:",
+                options: ["Reflection", "Refraction", "Scattering", "Dispersion"],
+                correct: 2,
+                marks: 2
+            }
+        ];
+
+        let currentQuestion = 0;
+        let score = 0;
+        let answers = [];
+
+        function loadQuestion() {
+            const container = document.getElementById('test-container');
+            const question = testQuestions[currentQuestion];
+
+            container.innerHTML = `
+                <div class="test-question">
+                    <div class="question-number">Question ${currentQuestion + 1} of ${testQuestions.length}</div>
+                    <div class="question-text">${question.question}</div>
+                    <div class="options-container">
+                        ${question.options.map((option, index) => `
+                            <div class="option" onclick="selectOption(${index})">
+                                <div class="option-letter">${String.fromCharCode(65 + index)}</div>
+                                <div>${option}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="test-controls">
+                        <button class="btn" onclick="previousQuestion()" ${currentQuestion === 0 ? 'disabled' : ''}>Previous</button>
+                        <button class="btn" onclick="nextQuestion()" id="next-btn" disabled>Next</button>
+                    </div>
+                </div>
+            `;
+        }
+
+        function selectOption(optionIndex) {
+            const options = document.querySelectorAll('.option');
+            options.forEach(opt => opt.classList.remove('selected'));
+            options[optionIndex].classList.add('selected');
+
+            answers[currentQuestion] = optionIndex;
+            document.getElementById('next-btn').disabled = false;
+        }
+
+        function nextQuestion() {
+            if (currentQuestion < testQuestions.length - 1) {
+                currentQuestion++;
+                loadQuestion();
+            }
+        }
+
+        function previousQuestion() {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                loadQuestion();
+            }
+        }
+
+        function showResults() {
+            score = 0;
+            testQuestions.forEach((question, index) => {
+                if (answers[index] === question.correct) {
+                    score += question.marks;
+                }
+            });
+
+            const totalMarks = testQuestions.reduce((sum, q) => sum + q.marks, 0);
+            const percentage = (score / totalMarks * 100).toFixed(1);
+
+            document.getElementById('score-display').textContent = `Score: ${score}/${totalMarks} (${percentage}%)`;
+            document.getElementById('test-result').style.display = 'block';
+
+            // Show detailed results
+            const details = document.getElementById('result-details');
+            details.innerHTML = `
+                <div class="result-box">
+                    <h4>Correct Answers</h4>
+                    <p>${answers.filter((ans, i) => ans === testQuestions[i].correct).length}/${testQuestions.length}</p>
+                </div>
+                <div class="result-box">
+                    <h4>Percentage</h4>
+                    <p>${percentage}%</p>
+                </div>
+                <div class="result-box">
+                    <h4>Grade</h4>
+                    <p>${percentage >= 90 ? 'A+' : percentage >= 80 ? 'A' : percentage >= 70 ? 'B' : percentage >= 60 ? 'C' : 'D'}</p>
+                </div>
+            `;
+        }
+
+        function resetTest() {
+            currentQuestion = 0;
+            score = 0;
+            answers = [];
+            document.getElementById('test-result').style.display = 'none';
+            loadQuestion();
+        }
+
+        // Initialize test
+        loadQuestion();
+
+        // Smooth scrolling for navigation
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Toggle solution visibility
+        function toggleSolution(id) {
+            const solution = document.getElementById(id);
+            if (solution.style.display === 'none') {
+                solution.style.display = 'block';
+            } else {
+                solution.style.display = 'none';
+            }
+        }
+        /* ===== NEW FEATURES JS ===== */
+
+        // 0. Print/PDF Function
+        function printPage() {
+            window.print();
+        }
+
+        // 1. Dark Mode Toggle
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+            const btn = document.getElementById('themeToggle');
+            if (document.body.classList.contains('dark-mode')) {
+                btn.innerHTML = '☀️ Light Mode';
+            } else {
+                btn.innerHTML = '🌙 Dark Mode';
+            }
+        }
+
+        // 2. Search Functionality
+        function searchQuestions() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const questionBoxes = document.querySelectorAll('.question-box');
+            const topics = document.querySelectorAll('.topic');
+
+            questionBoxes.forEach(box => {
+                const text = box.innerText.toLowerCase();
+                if (text.includes(input)) {
+                    box.style.display = 'block';
+                    // Ensure parent topic is visible
+                    box.closest('.topic').style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            });
+
+            // If input is empty, reset all
+            if (input === '') {
+                questionBoxes.forEach(box => box.style.display = 'block');
+                topics.forEach(topic => topic.style.display = 'block');
+            }
+        }
+
+        // 3. Quiz Timer Logic
+        let timerInterval;
+        let timeLeft = 900; // 15 minutes in seconds
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            timeLeft = 900;
+            updateTimerDisplay();
+
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                updateTimerDisplay();
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    alert("Time's up! Showing results.");
+                    showResults();
+                }
+            }, 1000);
+        }
+
+        function updateTimerDisplay() {
+            const minutes = Math.floor(timeLeft / 60);
+            const seconds = timeLeft % 60;
+            // Assuming the 2nd stat box is Time
+            const timeBox = document.querySelector('.test-stats .stat-box:nth-child(2)');
+            if (timeBox) {
+                timeBox.innerHTML = `Time: <strong>${minutes}:${seconds < 10 ? '0' : ''}${seconds}</strong>`;
+            }
+        }
+
+        // Hook into existing Reset/Load
+        const originalReset = resetTest;
+        resetTest = function () {
+            originalReset();
+            startTimer();
+        };
+
+        // Start timer on load
+        startTimer();
+    </script>
+</body>
+
+</html>
